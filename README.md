@@ -1,8 +1,10 @@
-# r
+# simple vote
 simplevote
-admin
-123
-
+the admin：
+user admin
+pass 123
+#help
 help me！！！
-i know nothing，this voting sys is trash，
-help me save it！
+I know nothing，this voting sys is trash，
+help me fix it！
+
