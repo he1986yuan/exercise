@@ -1,10 +1,4 @@
-# simple vote
-simplevote
-the admin：
-user admin
-pass 123
-#help
-help me！！！
-I know nothing，this voting sys is trash，
-help me fix it！
-
+# 三个小项目
+一个投票系统
+一个邮件查询模块
+一个简陋的文章管理模块
