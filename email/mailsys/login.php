@@ -2,10 +2,8 @@
 session_start();
 
 require "connect.inc.php";                           //如果提交表单就链接数据库验证
-if(isset($_POST['sub']))
-{                          　　　　　　　　　　　　//使用从表单中接收到的用户名和密码，作为在user表中的查询条件
-	
-	$stmt=$pdo->prepare("SELECT id,username FROM user WHERE username=? and userpwd=?");
+if(isset($_POST['sub']))                            //使用从表单中接收到的用户名和密码，作为在user表中的查询条件
+{       $stmt=$pdo->prepare("SELECT id,username FROM user WHERE username=? and userpwd=?");
 	$stmt->execute(array($_POST["username"],md5($_POST["password"]) ));
 
 	if ($stmt->rowCount()>0) 
